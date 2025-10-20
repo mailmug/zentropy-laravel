@@ -7,6 +7,8 @@
 
 ---
 
+[Zentropy Server](https://github.com/mailmug/zentropy)
+
 ## Features
 
 - ✅ Full Laravel 10, 11, 12 support  
