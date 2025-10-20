@@ -1,7 +1,7 @@
 # Zentropy Laravel
 
 [![Latest Version](https://img.shields.io/packagist/v/mailmug/zentropy-laravel.svg?style=flat-square)](https://packagist.org/packages/mailmug/zentropy-laravel)
-[![License](https://img.shields.io/packagist/l/mailmug/zentropy-laravel.svg?style=flat-square)](LICENSE)
+<a href="LICENSE"><img src="https://badgen.net/github/license/mailmug/zentropy-laravel" /></a>
 
 **Zentropy Laravel** is a simple and powerful **Laravel wrapper for MailMug's Zentropy PHP client** — a high-performance **Redis alternative**. Easily store, retrieve, and manage key-value data using **TCP or Unix socket connections** directly from your Laravel applications.  
 
