@@ -1,0 +1,50 @@
+{
+    "name": "mailmug/zentropy-laravel",
+    "description": "Laravel wrapper for MailMug's zentropy-php package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MailMug",
+            "email": "info@MailMug.net"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "mailmug/zentropy-php": "^1.0",
+        "laravel/framework": "^10|^11|^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "MailMug\\ZentropyLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MailMug\\ZentropyLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MailMug\\ZentropyLaravel\\ZentropyWrapperServiceProvider"
+            ],
+            "aliases": {
+                "Zentropy": "MailMug\\ZentropyLaravel\\Facades\\Zentropy"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^12.4",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "pestphp/pest": "^4.1",
+        "orchestra/testbench": "^10.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

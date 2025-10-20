@@ -1,0 +1,39 @@
+# Composer
+/vendor/
+/composer.lock
+
+# Node / NPM
+/node_modules/
+/package-lock.json
+/yarn.lock
+
+# IDEs
+/.idea/
+/*.iml
+/.vscode/
+/*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Laravel / PHP
+/.env
+/.env.testing
+/storage/
+/bootstrap/cache/*.php
+
+# Logs
+*.log
+logs/
+
+# Pest / PHPUnit
+/tests/_output/
+/coverage/
+/phpunit.xml.cache
+
+# Misc
+*.bak
+*.swp
+*.tmp
+*.cache
