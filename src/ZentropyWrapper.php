@@ -27,6 +27,16 @@ class ZentropyWrapper
         return $this->client->set($key, $value);
     }
 
+    public function setEx(string $key, string $value, int $seconds): bool
+    {
+        return $this->client->setEx($key, $value, $seconds);
+    }
+
+    public function setPx(string $key, string $value, int $milliSeconds): bool
+    {
+        return $this->client->setPx($key, $value, $milliSeconds);
+    }
+
     public function get(string $key): ?string
     {
         return $this->client->get($key);
