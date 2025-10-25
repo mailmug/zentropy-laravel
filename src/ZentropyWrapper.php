@@ -12,7 +12,7 @@ class ZentropyWrapper
     public function __construct()
     {
         $unixSocket = config('zentropy.unix_socket');
-        if ($unixSocket) {
+        if ($unixSocket) { 
             $this->client = Client::unixSocket($unixSocket);
         } else {
             $this->client = Client::tcp(
@@ -50,8 +50,8 @@ class ZentropyWrapper
     {
         // Try to get the value from cache
         $value = $this->get($key);
-        
-        if (!is_null($value)) {
+
+        if (!is_null($value)) { 
             return $this->unserialize($value);
         }
         
@@ -84,7 +84,7 @@ class ZentropyWrapper
         $value = $callback();
         
         // Store the value in cache forever
-        $this->set($key, $this->serialize($value));
+        // $this->set($key, $this->serialize($value));
         
         return $value;
     }
