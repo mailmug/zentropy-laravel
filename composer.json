@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "mailmug/zentropy-php": "^1.1.2",
+        "mailmug/zentropy-php": "^1.1.3",
         "laravel/framework": "^10|^11|^12"
     },
     "autoload": {
